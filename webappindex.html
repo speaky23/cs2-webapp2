@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CS2 Skin Terminal</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ТЕРМИНАЛ</h1>
+            <div class="balance">Баланс: <span id="balance">0</span> 💎</div>
+        </header>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Поиск скина (AWP | Asiimov)">
+            <button onclick="searchSkin()">🔍</button>
+        </div>
+        <div id="result" class="result-card hidden">
+            <img id="skinImg" src="" alt="Skin">
+            <h2 id="skinName">Skin Name</h2>
+            <p id="skinPrice">0 ₽</p>
+            <button class="buy-btn" onclick="buySkin()">Купить</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

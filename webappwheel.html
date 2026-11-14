@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Колесо Фортуны</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container text-center">
+        <h1>🎡 КОЛЕСО ФОРТУНЫ</h1>
+        <div class="wheel-container">
+            <canvas id="wheelCanvas" width="300" height="300"></canvas>
+            <div class="wheel-center">💎</div>
+        </div>
+        <button id="spinBtn" class="spin-btn" onclick="spinWheel()">КРУТИТЬ (5 💎)</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
